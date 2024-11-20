@@ -1,0 +1,290 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+  overflow-x: hidden;
+}
+
+/* Header Styles */
+header {
+  background-color: #ff4b4b;
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Styling untuk logo container */
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0;
+  background-color: #fff; /* Background putih pada kotak logo */
+  border-radius: 15px; /* Membuat sudut kotak logo melengkung */
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan halus di sekitar kotak logo */
+  transition: all 0.3s ease-in-out; /* Efek transisi untuk hover */
+}
+
+/* Efek hover untuk kotak logo */
+.logo-container:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Bayangan lebih besar saat hover */
+  transform: scale(1.05); /* Efek memperbesar sedikit saat hover */
+}
+
+/* Styling logo gambar */
+.logo {
+  width: 80px; /* Ukuran logo disesuaikan */
+  height: auto;
+  border-radius: 8px; /* Sudut logo melengkung */
+  transition: all 0.3s ease-in-out; /* Efek transisi untuk gambar logo */
+  margin-right: 10px; /* Memberikan jarak antara logo dan teks */
+}
+
+/* Styling untuk teks h1 */
+.logo-container h1 {
+  font-size: 1.6rem;
+  margin: 0;
+  color: #ff4b4b;
+  font-weight: bold;
+  text-transform: uppercase; /* Membuat teks kapital */
+}
+
+/* Efek hover untuk gambar logo */
+.logo-container:hover .logo {
+  transform: rotate(10deg); /* Efek putar logo sedikit saat hover */
+}
+
+
+
+header h1 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.search-form input[type="text"] {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  width: 250px;
+  transition: all 0.3s ease;
+}
+
+.search-form input[type="text"]:focus {
+  width: 300px;
+}
+
+.search-form button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+  transition: background-color 0.3s ease;
+}
+
+.search-form button:hover {
+  background-color: #555;
+}
+
+/* Navigation Styles */
+nav {
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #ff4b4b;
+}
+
+/* Container Styles */
+.container {
+  padding: 2rem;
+}
+
+/* Section Titles */
+.container h2 {
+  font-size: 1.8rem;
+  color: #ff4b4b;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Berita Section */
+.berita-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.berita {
+  display: flex;
+  gap: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  background-color: #fff;
+  transition: transform 0.3s;
+}
+
+.berita:hover {
+  transform: scale(1.03);
+}
+
+.berita img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.berita h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-top: 0.5rem;
+}
+
+.berita p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Drama Section */
+.rekomendasi {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.drama {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  flex: 1 1 calc(33.333% - 1rem); /* Lebar kotak drama fleksibel agar 3 kolom */
+  min-width: 250px;
+  max-width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center; /* Menyelaraskan teks ke tengah */
+  position: relative;
+}
+
+.drama img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.drama:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.drama h4 {
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  color: #ff5f6d;
+}
+
+.drama p {
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Kategori Drama */
+.kategori-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.kategori-item-box {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex: 1 1 calc(33.333% - 1rem); /* 3 kolom di layar besar */
+  min-width: 220px; /* Minimum lebar kotak */
+  text-align: center;
+}
+
+.kategori-item-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.kategori-item {
+  color: #333;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: block;
+  padding: 0.5rem;
+  border-radius: 5px;
+  background: #ff5f6d;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.kategori-item:hover {
+  background-color: #ffc371;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .drama {
+    flex: 1 1 calc(50% - 1rem); /* Dua kolom di tablet */
+  }
+  .kategori-item-box {
+    flex: 1 1 calc(50% - 1rem); /* Dua kolom di tablet */
+  }
+}
+
+@media (max-width: 480px) {
+  .drama {
+    flex: 1 1 100%; /* Satu kolom di ponsel */
+  }
+  .kategori-item-box {
+    flex: 1 1 100%; /* Satu kolom di ponsel */
+  }
+}

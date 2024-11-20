@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suka Drakor Oppa - Portal Drama Korea</title>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      function searchDrama() {
+        const query = document
+          .getElementById("search-input")
+          .value.toLowerCase();
+        const dramas = document.querySelectorAll(".drama");
+
+        dramas.forEach((drama) => {
+          const title = drama.querySelector("h4").textContent.toLowerCase();
+          const description = drama
+            .querySelector("p")
+            .textContent.toLowerCase();
+
+          if (title.includes(query) || description.includes(query)) {
+            drama.style.display = "block";
+          } else {
+            drama.style.display = "none";
+          }
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo-container">
+        <img src="logo.png" alt="Logo Suka Oppa" class="logo" />
+        <h1>Suka Drakor Oppa</h1>
+      </div>
+
+      <form
+        action="javascript:void(0);"
+        class="search-form"
+        onsubmit="searchDrama()"
+      >
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Cari drama Korea..."
+        />
+        <button type="submit">Cari</button>
+      </form>
+    </header>
+
+    <!-- Navigasi -->
+    <nav>
+      <a href="#berita">Berita</a>
+      <a href="#ongoing">Ongoing</a>
+      <a href="#rekomendasi">Rekomendasi</a>
+      <a href="kontak.html" target="_blank">Kontak</a>
+    </nav>
+
+    <!-- Konten Utama -->
+    <section class="container" id="berita">
+      <h2>Hot New</h2>
+      <div class="berita-list">
+        <!-- Berita Pertama -->
+        <a href="berita1.html" class="berita-link">
+          <div class="berita">
+            <img src="sunjae2.jpg" alt="Sunjae" />
+            <h3>
+              Sunjae atau yang dikenal Byeon Woo-seok Akan Tampil di 2024 MAMA
+              Awards
+            </h3>
+            <p>
+              Dikenal sebagai aktor utama dalam drama populer Lovely Runner yang
+              berperan sebagai Ryu Sun-jae.
+            </p>
+          </div>
+        </a>
+
+        <!-- Berita Kedua -->
+        <a href="berita2.html" class="berita-link">
+          <div class="berita">
+            <img src="wonder.jpg" alt="The Wonderfools" />
+            <h3>
+              Park Eun Bin hingga Cha Eun Woo Dikonfirmasi Bintangi Drakor The
+              Wonderfools
+            </h3>
+            <p>
+              Serial ini diharapkan membawa nuansa segar dalam genre komedi aksi
+              dengan tema kekuatan super.
+            </p>
+          </div>
+        </a>
+
+        <!-- Berita Ketiga -->
+        <a href="berita3.html" class="berita-link">
+          <div class="berita">
+            <img src="karina.jpg" alt="Lee Joo-wook dan Karina" />
+            <h3>Agensi Ungkap Alasan Lee Jae-wook dan Karina aespa Putus</h3>
+            <p>
+              Lee Jae-wook dan Karina aespa putus setelah dikonfirmasi
+              berpacaran selama lima minggu.
+            </p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Ongoing Drama -->
+    <section class="container" id="ongoing">
+      <h2>Drama Korea yang Sedang Tayang</h2>
+      <div class="rekomendasi">
+        <a href="drama1.html" class="berita-link">
+          <div class="drama">
+            <img src="family.jpg" alt="Drama Ongoing 1" />
+            <h4>Family By Choice</h4>
+            <p>
+              Family by Choice berfokus pada tiga orang remaja yang telah
+              bersama sejak kecil.
+            </p>
+          </div>
+        </a>
+
+        <a href="drama2.html" class="berita-link">
+          <div class="drama">
+            <img src="plangton1.jpg" alt="Drama Ongoing 2" />
+            <h4>Mr.Plankton</h4>
+            <p>
+              Drama romansa yang menyentuh hati, film komedi dan dark komedi.
+            </p>
+          </div>
+        </a>
+
+        <a href="drama3.html" class="berita-link">
+          <div class="drama">
+            <img src="brewing.jpg" alt="Drama Ongoing 3" />
+            <h4>Brewing Love</h4>
+            <p>genre komedi-romantis</p>
+          </div>
+        </a>
+
+        <a href="drama4.html" class="berita-link">
+          <div class="drama">
+            <img src="marry.png" alt="Drama Ongoing 4" />
+            <h4>Marry You</h4>
+            <p>Komedi seru untuk ditonton dengan gendre.</p>
+          </div>
+        </a>
+
+        <a href="drama5.html" class="berita-link">
+          <div class="drama">
+            <img src="parole.jpg" alt="Drama Ongoing 5" />
+            <h4>Parole Examiner Lee</h4>
+            <p>Genre misteri, laga.</p>
+          </div>
+        </a>
+
+        <a href="drama6.html" class="berita-link">
+          <div class="drama">
+            <img src="the.jpeg" alt="Drama Ongoing 6" />
+            <h4>The History of Us</h4>
+            <p>Drama laga berlatar era Joseon.</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Rekomendasi Drama -->
+    <section class="container" id="rekomendasi">
+      <h2>Rekomendasi Drama Korea</h2>
+      <div class="rekomendasi">
+        <a href="rekomendasi1.html" class="berita-link">
+          <div class="drama">
+            <img src="Night.jpg" alt="Drama Rekomendasi 1" />
+            <h4>Miss Night and Day</h4>
+            <p>Mystery, Comedy, Romance, Fantasy</p>
+          </div>
+        </a>
+
+        <a href="rekomendasi2.html" class="berita-link">
+          <div class="drama">
+            <img src="Beauty.jpg" alt="Drama Rekomendasi 2" />
+            <h4>True Beauty</h4>
+            <p>Genre roman, film komedi, komedi romantis, drama</p>
+          </div>
+        </a>
+
+        <a href="rekomendasi3.html" class="berita-link">
+          <div class="drama">
+            <img src="Lovely.png" alt="Drama Rekomendasi 3" />
+            <h4>Lovely Runner</h4>
+            <p>Drama dengan genre time travel, roman dan fantasi.</p>
+          </div>
+        </a>
+
+        <a href="rekomendasi4.html" class="berita-link">
+          <div class="drama">
+            <img src="okay.jpg" alt="Drama Rekomendasi 4" />
+            <h4>It's Okay To Not Be Okay</h4>
+            <p>Drama komedi gendre roman, komedi, fiksi psikologis</p>
+          </div>
+        </a>
+
+        <a href="rekomendasi5.html" class="berita-link">
+          <div class="drama">
+            <img src="sun.jpg" alt="Drama Rekomendasi 5" />
+            <h4>Descendants fO The Sun</h4>
+            <p>Drama gendre roman, laga, petualangan, komedi, perang.</p>
+          </div>
+        </a>
+
+        <a href="rekomendasi6.html" class="berita-link">
+          <div class="drama">
+            <img src="world1.jpg" alt="Drama Rekomendasi 6" />
+            <h4>The World of the Married</h4>
+            <p>Drama gendre pelakor semakin didepan, horror, melodrama.</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Suka Oppa. Semua hak dilindungi.</p>
+    </footer>
+  </body>
+</html>
